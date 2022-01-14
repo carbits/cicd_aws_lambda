@@ -117,12 +117,6 @@ jobs:
             aws lambda update-function-code \
               --function-name my-function \
               --s3-bucket carti-cicd-lambad-test-bucket \
-              --s3-key ABCDEFGHIJ \
+              --s3-key ${{ github.repository }}/${{ github.sha }}.zip  \
               --publish
 
-#        run: |
-#            aws lambda update-function-code \
-#              --function-name my-function \
-#              --s3-bucket carti-cicd-lambad-test-bucket \
-#              --s3-key ${{ github.repository }}/${{ github.sha }}.zip \
-#              --publish
