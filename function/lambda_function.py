@@ -8,10 +8,10 @@ def lambda_handler(event, context):
     Returns:
         string: greeting response
     """
-    print('Starting AWS Lambda functions\n---------------------------------------------'
+    print('Starting AWS Lambda functions\n---------------------------------------------')
 
     if event["input"] == "Hello":
-        return "Hello LIVERPOOL...."
+        return "Hello LIVERPOOL 12345...."
 
     if event["input"] == "Hi":
         return "Hi LIVERPOOL..."
